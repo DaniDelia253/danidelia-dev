@@ -1,9 +1,9 @@
 .about-container {
-  margin: auto;
-  margin-top: 20px;
-  background-color: rgba(250, 235, 215, 0.4);
-  border-radius: 25px;
-  padding: 50px 20px;
+	margin: auto;
+	margin-top: 20px;
+	background-color: rgba(250, 235, 215, 0.4);
+	border-radius: 25px;
+	padding: 50px 20px;
 }
 
 /* .container-sm {
@@ -11,16 +11,16 @@
 } */
 
 .row {
-  align-items: center;
-  justify-content: center;
+	align-items: center;
+	justify-content: center;
 }
 
 .about-text {
-  color: #672900fa;
-  text-align: justify;
-  font-size: calc(0.5rem + 0.8vw);
+	color: #672900fa;
+	text-align: justify;
+	font-size: calc(0.5rem + 0.8vw);
 }
 
 .skill-icon {
-  margin: 20px 5px;
+	margin: 20px 5px;
 }
