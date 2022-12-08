@@ -1,0 +1,55 @@
+<div class="about-container col-12">
+  <div class="row">
+    <div class="container">
+      <div class="row">
+        <p
+          [class]="
+            windowWidth !== undefined && windowWidth > 1000
+              ? 'col-10 about-text img-fluid'
+              : 'col-9 about-text img-fluid'
+          "
+        >
+          Hi there! I'm Dani, a full-stack developer leveraging years of
+          experience in education to build meaningful, responsive web
+          applications. I earned a certificate in full stack development from
+          Rice University's Coding Bootcamp, where I developed skills in the
+          MERN stack. I had the opportunity to intern at Slalom Build in
+          Houston, and developed a chatbot application written in Typescript,
+          and utilizing an AWS microservice architecture. Currently, I am
+          working on enhancing my full-stack skills by learning Angular and
+          .NET, as well as working toward my second AWS certification. I am an
+          innovative problem solver passionate about ensuring that each of my
+          applications provides an impactful user experience. I enjoyed working
+          with teams of developers throughout bootcamp and my internship, and am
+          excited to bring my experience in a fast-paced, demanding environment
+          to a job where my attention to detail and passion for providing
+          quality work can be an asset.
+        </p>
+        <!-- if the window is bigger that 1000, 10 nd 2... smaller means 9 and 3 -->
+        <img
+          src="https://i.imgur.com/2ojthbt.png"
+          alt="Picture of Dani"
+          [class]="
+            windowWidth !== undefined && windowWidth > 1000
+              ? 'col-2 about-image img-fluid'
+              : 'col-3 about-image img-fluid'
+          "
+        />
+      </div>
+    </div>
+  </div>
+  <div class="container col-12">
+    <div class="row">
+      <img
+        *ngFor="let img of images"
+        src="{{ img.src }}"
+        alt="{{ img.name }}"
+        [class]="
+          windowWidth !== undefined && windowWidth > 850
+            ? 'col-1 img-fluid skill-icon'
+            : 'col-2 img-fluid skill-icon'
+        "
+      />
+    </div>
+  </div>
+</div>

@@ -1,0 +1,17 @@
+.nav {
+  margin: 5px 15px;
+}
+
+.nav-link {
+  color: white;
+  padding: 20px;
+  cursor: pointer;
+  text-shadow: 1px 1px 1px #672900fa;
+  font-size: calc(1rem + 0.75vw);
+}
+
+.nav-link:hover {
+  padding: 18px;
+  text-shadow: 2px 2px 4px #672900fa;
+  font-size: calc(1.1rem + 0.75vw);
+}

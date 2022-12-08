@@ -1,0 +1,14 @@
+.footer {
+  text-align: center;
+  background-color: rgba(250, 235, 215, 0.4);
+}
+
+p {
+  color: #672900fa;
+  font-size: calc(0.5rem + 0.8vw);
+  text-shadow: 1px 1px 1px white;
+}
+
+span {
+  text-shadow: 1.5px 1.5px 1px #672900fa;
+}
