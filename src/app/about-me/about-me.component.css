@@ -1,14 +1,23 @@
 .about-container {
 	margin: auto;
 	margin-top: 20px;
-	background-color: rgba(250, 235, 215, 0.4);
+	background-color: white;
 	border-radius: 25px;
 	padding: 50px 20px;
+	position: relative;
 }
-
-/* .container-sm {
-  flex-direction: column;
-} */
+.about-container::after {
+	content: "";
+	position: absolute;
+	inset: -0.625em;
+	background: linear-gradient(
+		to bottom right,
+		rgb(251, 82, 108),
+		rgb(255, 170, 0)
+	);
+	filter: blur(1rem);
+	z-index: -1;
+}
 
 .row {
 	align-items: center;
@@ -16,7 +25,7 @@
 }
 
 .about-text {
-	color: #672900fa;
+	color: rgb(41, 41, 41);
 	text-align: justify;
 	font-size: calc(0.5rem + 0.8vw);
 }

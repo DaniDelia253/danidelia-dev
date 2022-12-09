@@ -1,10 +1,11 @@
 #avatar-img {
-  max-height: 600px;
-  max-width: 600px;
+	max-height: 600px;
+	max-width: 600px;
 }
 
 h1 {
-  color: white;
-  text-shadow: 2px 2px 2px #672900fa;
-  font-size: calc(1.375rem + 3.5vw);
+	font-size: calc(1.375rem + 3.5vw);
+	background: -webkit-linear-gradient(rgb(255, 142, 55), rgb(255, 79, 126));
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
 }

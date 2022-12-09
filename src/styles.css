@@ -4,8 +4,8 @@ body,
 html {
 	min-height: 100%;
 	margin: 0;
-	padding: 0;
-	background-attachment: fixed;
+	padding-bottom: 50px;
+	/* background-attachment: fixed;
 	background-image: linear-gradient(
 		to right top,
 		#ffb63f,
@@ -13,5 +13,5 @@ html {
 		#ff8e7f,
 		#ff84a3,
 		#ff85c3
-	);
+	); */
 }
