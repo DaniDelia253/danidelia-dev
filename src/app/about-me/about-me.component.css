@@ -1,6 +1,5 @@
 .about-container {
 	margin: auto;
-	margin-top: 20px;
 	background-color: white;
 	border-radius: 25px;
 	padding: 50px 20px;
@@ -12,8 +11,8 @@
 	inset: -0.625em;
 	background: linear-gradient(
 		to bottom right,
-		rgb(251, 82, 108),
-		rgb(255, 170, 0)
+		rgba(251, 82, 107, 0.8),
+		rgb(255, 170, 0, 0.8)
 	);
 	filter: blur(1rem);
 	z-index: -1;

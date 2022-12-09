@@ -1,64 +1,82 @@
 .work-container {
-  margin: auto;
-  background-color: rgba(250, 235, 215, 0.4);
-  border-radius: 25px;
-  padding: 20px;
+	margin: auto;
+	background-color: white;
+	border-radius: 25px;
+	position: relative;
+}
+.work-container::after {
+	content: "";
+	position: absolute;
+	inset: -0.625em;
+	background: linear-gradient(
+		to bottom right,
+		rgba(251, 82, 107, 0.8),
+		rgb(255, 170, 0, 0.8)
+	);
+	filter: blur(1rem);
+	z-index: -1;
+}
+
+.row {
+	display: flex;
+	justify-content: center;
 }
 
 .project {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  position: relative;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	position: relative;
 }
 
 h2 {
-  color: white;
-  text-shadow: 1px 1px 1px #672900fa;
-  text-align: center;
-  font-size: calc(1rem + 1.25vw);
+	margin: 30px 5px 5px 5px;
+	color: rgb(41, 41, 41);
+	text-shadow: 2px 2px 2px antiquewhite;
+	text-align: center;
+	font-size: calc(1rem + 1.25vw);
 }
 
 .img-title {
-  color: #672900fa;
-  /* text-shadow: 2px 2px 3px white; */
-  background-color: antiquewhite;
-  text-shadow: 2px 2px 1px white;
-  box-shadow: 2px 2px 2px #672900fa;
-  padding: 0 5px;
-  font-size: calc(1rem + 0.8vw);
-  display: inline-block !important;
-  transform: rotate(-5deg);
-  backface-visibility: hidden;
-  z-index: 3;
-  position: absolute;
-  top: calc(10% - 5px);
-  left: calc(10% - 5px);
+	color: rgb(41, 41, 41);
+	/* text-shadow: 2px 2px 3px white; */
+	background-color: antiquewhite;
+	text-shadow: 2px 2px 1px white;
+	box-shadow: 2px 2px 2px rgba(41, 41, 41, 0.5);
+	padding: 0 5px;
+	font-size: calc(1rem + 0.8vw);
+	display: inline-block !important;
+	transform: rotate(-5deg);
+	backface-visibility: hidden;
+	z-index: 3;
+	position: absolute;
+	top: calc(10% - 5px);
+	left: calc(10% - 5px);
 }
 
 img {
-  margin: 50px 0;
-  position: relative;
-  /* z-index: 1; */
-  opacity: 1;
-  transition: 0.5s ease;
-  backface-visibility: hidden;
+	margin: 50px 0;
+	position: relative;
+	/* z-index: 1; */
+	opacity: 1;
+	transition: 0.5s ease;
+	backface-visibility: hidden;
 }
 img:hover {
-  opacity: 0.5;
+	opacity: 0.5;
 }
 
 .project-info {
-  /* z-index: 90;
+	/* z-index: 90;
   position: absolute; */
-  transition: 0.5s ease;
-  opacity: 0;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
+	transition: 0.5s ease;
+	opacity: 0;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	-ms-transform: translate(-50%, -50%);
 }
 .project:hover .project-info {
-  opacity: 1;
+	opacity: 1;
 }

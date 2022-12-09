@@ -1,21 +1,21 @@
-<div class="container work-container">
-  <div class="row">
-    <!-- column of all work gifs -->
-    <!-- each one, on hover, give it a translucent filter and present options as buttons -->
-    <h2 class="col-12">My Work:</h2>
-    <div class="project" *ngFor="let project of projects">
-      <img
-        (click)="this.modalenabled = true"
-        src="{{ project.imgsrc }}"
-        alt="{{ project.name }}"
-        class="col-7"
-      />
-      <div class="project-info">
-        <button class="btn btn-primary">infooo</button>
-        <br />
-        <button>infooo</button>
-      </div>
-      <p class="img-title">{{ project.name }}</p>
-    </div>
-  </div>
+<div class="container work-container col-11">
+	<div class="row">
+		<!-- column of all work gifs -->
+		<!-- each one, on hover, give it a translucent filter and present options as buttons -->
+		<h2 class="col-12">My Work:</h2>
+		<div class="project col-11" *ngFor="let project of projects">
+			<img
+				(click)="this.modalenabled = true"
+				src="{{ project.imgsrc }}"
+				alt="{{ project.name }}"
+				class="col-7"
+			/>
+			<div class="project-info">
+				<button class="btn btn-primary">infooo</button>
+				<br />
+				<button>infooo</button>
+			</div>
+			<p class="img-title">{{ project.name }}</p>
+		</div>
+	</div>
 </div>

@@ -4,16 +4,15 @@ img {
 
 .nav-link,
 .navbar-brand {
-	color: rgb(255, 94, 14);
-	text-shadow: 1px 1px 2px rgb(255, 147, 165);
+	color: rgb(41, 41, 41);
+	text-shadow: 2px 2px 2px antiquewhite;
 	cursor: pointer;
 	padding: 20px;
 	/* text-shadow: 1px 1px 1px #672900fa; */
-	font-size: calc(1rem + 0.75vw);
+	font-size: calc(1rem + 0.6vw);
 }
 
 .nav-link:hover {
 	padding: 18px;
-	transform: rotate(3deg);
-	font-size: calc(1rem + 0.85vw);
+	font-size: calc(1rem + 0.7vw);
 }
