@@ -1,6 +1,16 @@
-<div class="container work-container">
-  <div class="row">
-    <h2>Get in contact:</h2>
-    <div class="contact-info-container"></div>
-  </div>
+<div class="container work-container col-11">
+	<div class="row">
+		<h2>Let's connect!</h2>
+		<div
+			*ngFor="let contactMethod of contactMethods"
+			class="contact-info-container container-fluid"
+		>
+			<div class="contactMethodContainer container-fluid">
+				<a href="{{ contactMethod.link }}" target="”_blank”">
+					<i class="{{ contactMethod.iconClassList }} rowItem"></i>
+					<p class="rowItem">{{ contactMethod.title }}</p>
+				</a>
+			</div>
+		</div>
+	</div>
 </div>

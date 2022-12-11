@@ -9,6 +9,8 @@ const routes: Routes = [
 	{ path: "my-work", component: MyWorkComponent },
 	{ path: "contact-me", component: ContactMeComponent },
 	{ path: "", redirectTo: "/about-me", pathMatch: "full" },
+	{ path: "", redirectTo: "/about-me", pathMatch: "full" },
+	{ path: "**", redirectTo: "/about-me" },
 ]; // sets up routes constant where you define your routes
 @NgModule({
 	imports: [RouterModule.forRoot(routes)],
