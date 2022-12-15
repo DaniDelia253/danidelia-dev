@@ -1,6 +1,6 @@
 .DS_Store
 
-/.angular/cache
+.angular/cache
 # Logs
 logs
 *.log
