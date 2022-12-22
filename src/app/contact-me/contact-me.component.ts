@@ -25,7 +25,7 @@ export class ContactMeComponent implements OnInit {
 		{
 			title: "Resume",
 			iconClassList: "bi bi-paperclip",
-			link: "https://drive.google.com/file/d/1SplsSEwTaRseta4t3bL_qiLr89Ha7PAX/view?usp=share_link",
+			link: "https://drive.google.com/file/d/1k9CNTMzPSfqowFT7EeLDHYc9bWIFBsFO/view?usp=sharing",
 		},
 	];
 

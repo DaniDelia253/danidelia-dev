@@ -7,7 +7,44 @@ img {
 	color: rgb(41, 41, 41);
 	text-shadow: 2px 2px 2px antiquewhite;
 	cursor: pointer;
-	padding: 12px;
+	/* padding: 12px; */
 	/* text-shadow: 1px 1px 1px #672900fa; */
 	font-size: calc(0.9rem + 0.5vw);
+	border-radius: 10px;
 }
+
+.nav-link {
+	margin: 5px;
+	padding: 5px;
+}
+
+.active-link,
+.nav-link:hover {
+	background: linear-gradient(
+		to bottom right,
+		rgb(255, 106, 191, 0.3),
+		rgb(255, 138, 61, 0.3)
+	);
+}
+
+/* .nav-link {
+	position: relative;
+	text-decoration: none;
+}
+
+.nav-link:hover::after {
+	background: #f00;
+	background: linear-gradient(
+		to bottom right,
+		rgb(255, 106, 191),
+		rgb(255, 138, 61)
+	);
+	content: "";
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	height: 4px;
+	width: 100%;
+} */
+
+/* let's try an underline (maybe offset a little bit) and make it a cool box animation on hover AND stay activated when I am on that page */

@@ -8,13 +8,13 @@
 .about-container::after {
 	content: "";
 	position: absolute;
-	inset: -0.625em;
+	inset: -0.3em;
 	background: linear-gradient(
 		to bottom right,
 		rgba(251, 82, 107, 0.8),
 		rgb(255, 170, 0, 0.8)
 	);
-	filter: blur(1rem);
+	filter: blur(0.75rem);
 	z-index: -1;
 }
 

@@ -7,13 +7,13 @@
 .work-container::after {
 	content: "";
 	position: absolute;
-	inset: -0.625em;
+	inset: -0.3em;
 	background: linear-gradient(
 		to bottom right,
 		rgba(251, 82, 107, 0.8),
 		rgb(255, 170, 0, 0.8)
 	);
-	filter: blur(1rem);
+	filter: blur(0.75rem);
 	z-index: -1;
 }
 
@@ -42,7 +42,8 @@ h2 {
 	/* text-shadow: 2px 2px 3px white; */
 	background-color: antiquewhite;
 	text-shadow: 2px 2px 1px white;
-	box-shadow: 2px 2px 2px rgba(41, 41, 41, 0.5);
+	box-shadow: 2px 2px 2px rgba(41, 41, 41, 0.5),
+		0px 0px 1px rgba(41, 41, 41, 0.5);
 	padding: 0 5px;
 	font-size: calc(1rem + 0.8vw);
 	display: inline-block !important;
@@ -51,32 +52,48 @@ h2 {
 	z-index: 3;
 	position: absolute;
 	top: calc(10% - 5px);
-	left: calc(10% - 5px);
+	left: calc(10% - 90px);
 }
 
 img {
 	margin: 50px 0;
+	width: 100%;
+	box-shadow: 3px 3px 4px rgba(41, 41, 41, 0.5),
+		-1px -1px 1px rgba(41, 41, 41, 0.5);
 	position: relative;
-	/* z-index: 1; */
-	opacity: 1;
-	transition: 0.5s ease;
-	backface-visibility: hidden;
-}
-img:hover {
-	opacity: 0.5;
 }
 
-.project-info {
-	/* z-index: 90;
-  position: absolute; */
-	transition: 0.5s ease;
-	opacity: 0;
+span {
+	z-index: 70;
 	position: absolute;
-	top: 50%;
-	left: 50%;
-	transform: translate(-50%, -50%);
-	-ms-transform: translate(-50%, -50%);
+	opacity: 0;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
 }
-.project:hover .project-info {
+
+button {
+	background-color: antiquewhite;
+	color: rgb(41, 41, 41);
+	text-shadow: 1px 1px 1px white;
+	box-shadow: 3px 3px 4px rgba(41, 41, 41, 0.5),
+		0px 0px 1px rgba(41, 41, 41, 0.5);
+}
+button:hover {
+	color: rgb(41, 41, 41);
+	background-color: rgb(253, 214, 164);
+	box-shadow: 3px 3px 7px rgba(41, 41, 41, 0.8),
+		0px 0px 1px rgba(41, 41, 41, 0.8);
+	text-decoration: none;
+}
+
+.project:hover span {
 	opacity: 1;
 }
+
+.project:hover img {
+	opacity: 0.4;
+}
+
+/*  */
